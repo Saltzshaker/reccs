@@ -172,11 +172,6 @@
 
 {% for recc in all_reccs %}
   <div class="js-recc-container border-b border-gray-200 p-4 {{ recc.bg_color }} flex justify-between items-start gap-4">
-    {% if recc.og_image_url %}
-      <div class="shrink-0 w-16 h-16 hidden">
-          <img loading="lazy" src="{{ recc.og_image_url }}" class="w-full h-full object-cover rounded">
-      </div>
-    {% endif %}
     <div class="flex-1 truncate">
       <a href="{{ recc.url }}" target="_blank" class="text-xl font-bold">
         {% if recc.og_title %}
